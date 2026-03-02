@@ -3,6 +3,7 @@ x = random.randint(1, 100)
 print("=========Number Guessing Game==========\n")
 print("Guess a number from 1 - 100!")
 n = 0
+trial = 0
 while n != x:
     n = int(input())
     if x == n:
@@ -12,3 +13,5 @@ while n != x:
         print("Too high!")
     else:
         print("Too low!")
+    trial += 1
+print(f"You have guessed in {trial} trial!")
