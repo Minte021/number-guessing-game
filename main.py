@@ -1,7 +1,9 @@
 import random
-x = random.randint(1, 100)
 print("=========Number Guessing Game==========\n")
-print("Guess a number from 1 - 100!")
+print("Enter the range you want(eg. 1 50): ")
+a, b = map(int, input().split())
+x = random.randint(a, b)
+print("Guess the number")
 n = 0
 trial = 0
 while n != x:
